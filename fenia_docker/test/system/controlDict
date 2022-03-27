@@ -1,0 +1,52 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+\*---------------------------------------------------------------------------*/
+FeniaFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      controlDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+application     icoFoam;
+
+startFrom       startTime;
+
+startTime       0;
+
+stopAt          endTime;
+
+endTime         86400000000.0; //17280000.7;
+
+deltaT          86400.0;
+
+dtMin          86400.0;  //86400.0; //432000.0;
+
+dtMax          8640000000.0;  //86400.0; //432000.0;
+
+nIncrDecr       5;
+
+writeControl    timeStep;
+
+writeInterval   100;
+
+nodePoint	points;
+
+purgeWrite      0;
+
+writeFormat     ascii;
+
+writePrecision  6;
+
+writeCompression off;
+
+timeFormat      general;
+
+timePrecision   12;
+
+runTimeModifiable true;
+
+
+// ************************************************************************* //
